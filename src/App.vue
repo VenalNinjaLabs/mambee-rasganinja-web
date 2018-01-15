@@ -35,5 +35,8 @@ body {
 ));
 
 @import "~vue-material/dist/theme/all"; // Apply the theme
+.md-input {
+  font-size: 16px !important;
+}
 </style>
 

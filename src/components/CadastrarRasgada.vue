@@ -1,7 +1,8 @@
 <template>
   <div class="md-layout md-alignment-center-center">
     <div class="md-layout-item md-size-30 md-small-size-95 md-elevation-1 form-container">
-      <span class="md-headline">Cadastrar nova rasgada</span>
+      <div class="md-headline">Cadastrar nova rasgada</div>
+      <div class="md-caption">Rasga Ninja é um site para exposição de opiniões anônimas</div>
       <md-field>
         <label>Nome</label>
         <md-input v-model="rasgada.nome"></md-input>
@@ -44,10 +45,19 @@ export default {
   },
   methods: {
     cadastrar() {
-      this.$store.dispatch("salvar", this.rasgada).then(() => {
-        this.rasgada = {};
-        this.$router.push("/");
-      });
+      if (
+        this.rasgada.nome &&
+        this.rasgada.cidade &&
+        this.rasgada.referencia &&
+        this.rasgada.comentario
+      ) {
+        this.$store.dispatch("salvar", this.rasgada).then(() => {
+          this.rasgada = {};
+          this.$router.push("/");
+        });
+      } else {
+        alert("Preencha todos os campos!");
+      }
     }
   }
 };

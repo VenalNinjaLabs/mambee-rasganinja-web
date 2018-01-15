@@ -2,7 +2,8 @@
     <div>
         <div class="md-layout md-alignment-top-center lista-titulo">
             <div class="md-layout-item md-size-55 md-small-size-95">
-                <span class="md-headline">Últimas rasgadas</span>
+                <div class="md-headline">Últimas rasgadas</div>
+                <div class="md-caption">Rasga Ninja é um site para exposição de opiniões anônimas</div>
             </div>
         </div>
         <div class="md-layout md-alignment-top-center">

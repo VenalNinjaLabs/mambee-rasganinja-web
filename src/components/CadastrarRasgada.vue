@@ -18,6 +18,11 @@
         <label>Comentário</label>
         <md-textarea v-model="rasgada.comentario"></md-textarea>
       </md-field>
+      <!-- Begin BidVertiser code -->
+      <SCRIPT data-cfasync="false"
+              SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=794755&bid=1921680"
+              TYPE="text/javascript"></SCRIPT>
+      <!-- End BidVertiser code -->
       <md-button @click="cadastrar()"
                  class="md-raised md-accent button">cadastrar</md-button>
     </div>

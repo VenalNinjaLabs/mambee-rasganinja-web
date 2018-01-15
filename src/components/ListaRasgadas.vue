@@ -5,6 +5,13 @@
                 <span class="md-headline">Últimas rasgadas</span>
             </div>
         </div>
+        <div class="md-layout md-alignment-top-center">
+            <!-- Begin BidVertiser code -->
+            <SCRIPT data-cfasync="false"
+                    SRC="//bdv.bidvertiser.com/BidVertiser.dbm?pid=794755&bid=1921680"
+                    TYPE="text/javascript"></SCRIPT>
+            <!-- End BidVertiser code -->
+        </div>
         <div v-show="lista.length < 1"
              class="md-layout md-alignment-top-center">
             <md-progress-spinner class="md-accent"
@@ -17,7 +24,6 @@
                           :rasgada="rasgada"
                           @atualizaLista="atualizarLista()" />
         </div>
-
         <div class="md-layout md-alignment-top-center lista-titulo">
             <div v-show="!carregando"
                  class="md-layout-item md-size-55 md-small-size-95">

@@ -38,5 +38,8 @@ body {
 .md-input {
   font-size: 16px !important;
 }
+.md-field {
+  font-size: 16px !important;
+}
 </style>
 

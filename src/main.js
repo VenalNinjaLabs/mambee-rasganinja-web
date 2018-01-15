@@ -13,7 +13,7 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-Vue.http.options.root = 'http://rasga.ninja:8888/api';
+Vue.http.options.root = 'http://api.rasga.ninja/api';
 //Vue.http.options.root = 'http://localhost:3090/api';
 
 /* eslint-disable no-new */
